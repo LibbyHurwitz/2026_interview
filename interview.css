@@ -1,0 +1,131 @@
+/* General page styling */
+body {
+    font-family:"New-Order", sans-serif;
+    margin: 0;
+    padding: 0 80px;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0;
+    /* Fallback color if gradient fails */
+    /* Fixed the semicolon inside the parentheses */
+    font-family: Helvetica, sans-serif;
+    color: #2f7146;
+    border-radius: 15px;
+}
+
+.question_txt{
+    color: #2f7146;
+    font-family:Helvetica, sans-serif;
+
+}
+img{
+    width: 300px;
+    height: auto;
+}
+.index {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: #a1c8af;
+    padding: 10px;
+    border-radius:15px;
+    margin-top:10px;
+}
+
+.index a {
+    text-decoration: none;
+    color: #2f7146;
+    font-weight: bold;
+}
+
+.contex {
+    justify-content: left;
+    font-family: Arial, sans-serif;
+}
+/* FLEX LAYOUT FOR QUESTIONS */
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Main text area */
+.text {
+    flex: 2;
+}
+
+/* Pull quote styling */
+.P_quote {
+    flex: 1;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-left: 4px solid #a1c8af;
+}
+
+/* .content .question:hover {
+    transform: scale(1.02);
+} */
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+/* =========================
+   MOBILE STYLES
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* Reduce side padding */
+    body {
+        padding: 0 20px;
+    }
+
+    /* Center header content */
+    .header {
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    /* INDEX → 2x2 grid */
+    .index {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .index a {
+        padding: 8px 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Stack question layout vertically */
+    .question {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .P_quote {
+        border-left: none;
+        border-top: 3px solid lightblue;
+;
+        padding-top: 10px;
+    }
+}
